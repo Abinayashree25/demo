@@ -1,0 +1,239 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+li{
+    padding: 20px;
+    
+}
+.container{
+    font-family: open serif sans-serif;
+}
+.dass{
+    margin-top: 35px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(187, 183, 183);
+}
+.dhars{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+.dhars > div {
+  width: 300px;
+  text-align: left;
+}
+
+.dhars img {
+  width: 100%;
+  height: 380px;
+  object-fit: contain;
+}
+.sam{
+    display: flex;
+    justify-content: center;
+    /* padding: 35px; */
+    
+}
+nav,a,li{
+    text-decoration: none;
+}
+ img:hover{
+    box-shadow: 0 15px 20px;
+}
+.dhars img {
+    width: 310px;
+    height: 380px;
+    object-fit: contain;  
+}
+.dhars div {
+    width: 310px;
+    height: 380px;
+    /* text-align: center; */
+    padding-bottom: 80px;
+}/* ================= MOBILE VIEW (0px – 320px) ================= */
+/* ================= MOBILE VIEW (0–320px) ================= */
+
+@media screen and (min-width: 320px) and (max-width: 760px) {
+
+  /* ===== NAV BAR ===== */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 8px;
+  }
+
+  .container h1 {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  ul {
+    display: flex;
+    gap: 6px;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    font-size: 8px;
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  /* ================= SKINCARE FIX ================= */
+
+  /* 🔥 ONE master grid for all products */
+  #skincare > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 8px;
+  }
+
+  /* remove individual row layout */
+  #skincare .dhars {
+    display: contents;
+  }
+
+  #skincare .dhars > div {
+    width: 100%;
+    height: auto;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+
+  #skincare .dhars img {
+    width: 100%;
+    max-width: 130px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  #skincare h2 {
+    font-size: 25px;
+    white-space: normal;
+  }
+
+  #skincare p {
+    font-size: 11px;
+  }
+
+  #skincare i {
+    font-size: 15px;
+  }
+
+  #skincare .sam h1 {
+    font-size: 20px;
+  }
+
+  /* ===== FOOTER ===== */
+
+  .dass {
+    padding: 16px 10px;
+  }
+
+  .dass h1 {
+    font-size: 22px;
+  }
+
+  .dass p {
+    font-size: 12px;
+  }
+
+}
+
+
+/* ================= TABLET VIEW (321px – 768px) ================= */
+
+/* ================= TABLET VIEW (321px – 768px) ================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* ===== NAV ===== */
+  nav {
+    padding: 12px 20px;
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  ul {
+    gap: 14px;
+  }
+
+  li {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  /* ================= FORCE 3 ITEMS PER ROW ================= */
+
+  #skincare .dhars {
+    display: grid !important;               /* 🔥 RESET MOBILE */
+    grid-template-columns: repeat(3, 1fr); /* 🔥 3 PER ROW */
+    gap: 20px;
+    padding: 16px;
+  }
+
+  #skincare .dhars > div {
+    width: 100% !important;   /* 🔥 cancel desktop width */
+    height: auto !important;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  #skincare .dhars img {
+    width: 100%;
+    max-width: 190px;
+    height: 210px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  #skincare h2 {
+    font-size: 30px;
+    white-space: normal;
+  }
+
+  #skincare p {
+    font-size: 15px;
+    white-space: normal;
+  }
+
+  #skincare i {
+    font-size: 16px;
+  }
+
+  #skincare .sam h1 {
+    font-size: 30px;
+  }
+
+  /* ===== FOOTER ===== */
+
+  .dass {
+    margin-top: 20px;
+    padding: 30px 20px;
+  }
+
+  .dass h1 {
+    font-size: 34px;
+  }
+
+  .dass p {
+    font-size: 16px;
+  }
+  
+
+}

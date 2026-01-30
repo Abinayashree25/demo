@@ -1,0 +1,208 @@
+body{
+    background-image: url(./assets/video_preview_0000.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+.harsh{
+    text-align: center;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 80px;
+    width: 380px;
+    box-shadow: 0 0 40px black;
+    /* color: aliceblue; */
+}
+.sri{
+    text-align: left;
+    /* align-items: 20px; */
+}
+.sree{
+    width: 700px;
+    height: 30px;
+    padding: 5px;
+    
+}
+input{
+    height: 40px;
+    width: 280px;
+    outline: 0;
+    border: 0;
+    border-bottom: 30px;
+    border-radius: 20px;
+    
+}
+button{
+    margin-left: 35%;
+    border-radius: 10px;
+    width: 80px;
+
+    /* background-color: rgb(255, 229, 83); */
+    
+}
+.soap{
+    text-decoration: none;
+}
+@media (max-width: 320px) {
+
+  /* ===== BODY ===== */
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* ===== LOGIN CARD ===== */
+  .harsh {
+    width: 94%;
+    padding: 20px 16px;
+    margin: 0 auto;
+    border-radius: 18px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* ===== TITLE ===== */
+  .harsh h1 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  /* ===== FORM WRAP ===== */
+  .sri {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  /* ===== LABEL ===== */
+  .sree {
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  /* ===== INPUT ===== */
+  input {
+    width: 100%;
+    height: 40px;
+    padding: 0 14px;
+    font-size: 13px;
+    border-radius: 22px;
+    box-sizing: border-box;
+  }
+
+  /* remove <br> gaps */
+  .sri br {
+    display: none;
+  }
+
+  /* ===== BUTTON ===== */
+  button {
+    display: block;
+    width: 100px;
+    height: 38px;
+    margin: 20px auto 10px;
+    font-size: 13px;
+    border-radius: 10px;
+  }
+
+  /* ===== SIGN UP TEXT ===== */
+  .sri p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+
+  .soap {
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+
+  /* ===== BODY ===== */
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* ===== LOGIN CARD ===== */
+  .harsh {
+    width: 420px;              /* tablet size */
+    padding: 28px 24px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* ===== TITLE ===== */
+  .harsh h1 {
+    font-size: 26px;
+    margin-bottom: 22px;
+  }
+
+  /* ===== FORM ===== */
+  .sri {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  /* ===== LABEL ===== */
+  .sree {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  /* ===== INPUT ===== */
+  input {
+    width: 100%;
+    height: 44px;
+    padding: 0 16px;
+    font-size: 14px;
+    border-radius: 22px;
+    box-sizing: border-box;
+  }
+
+  /* ===== BUTTON ===== */
+  button {
+    display: block;
+    width: 120px;
+    height: 42px;
+    margin: 26px auto 12px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+
+  /* ===== SIGN UP TEXT ===== */
+  .sri p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 14px;
+  }
+
+  .soap {
+    font-weight: 600;
+    text-decoration: none;
+  }
+}

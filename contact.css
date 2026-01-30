@@ -1,0 +1,203 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+li {
+    padding: 20px;
+
+}
+
+.container {
+    font-family: open serif sans-serif;
+}
+nav,a,li{
+    text-decoration: none;
+}
+.dass{
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(187, 183, 183);
+    padding-top: 60px;
+    /* margin-bottom: 37%; */
+}
+.hub {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(./assets/01-bg-grunge.jpg);
+    color: whitesmoke;
+}
+
+.bub1 {
+    width: 27%;
+    margin-top: 20px;
+}
+
+.bub2 {
+    width: 37%;
+    padding: 40px;
+    /* width: 100px; */
+}
+
+.bub3 {
+    padding: 20px;
+    width: 100%;
+    border: none;
+    outline: hidden;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    /* outline: none; */
+    /* border: rgb(103, 19, 19); */
+}
+
+.sheet {
+    width: 400px;
+    border-radius: 7px;
+    height: 30px;
+
+
+}
+
+.sheet1 {
+    height: 60px;
+    width: 400px;
+    border-radius: 7px;
+}
+
+.sheet2 {
+    padding-top: 20px;
+
+    /* width: 15%; */
+}
+.dass {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    /* height: 264px; */
+    
+    /* background-image: url(./assets/01-bg-grunge.jpg); */
+}
+@media screen and (min-width: 320px) and (max-width: 768px) 
+/* ================= MOBILE NAV BAR FIX ================= */
+
+{
+  nav {
+    display: flex;
+    flex-direction: row;          /* 🔥 ONE LINE */
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+  }
+
+  .container h1 {
+    font-size: 18px;
+    white-space: nowrap;          /* 🔥 next line pogakoodaadhu */
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;          /* 🔥 ONE LINE MENU */
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-top: 4px;
+    padding: 0;
+    font-size: 8px;
+    white-space: nowrap;          /* 🔥 wrap aagadhu */
+  }
+
+  nav a {
+    text-decoration: none;
+    color: purple;
+    font-weight: 500;
+  }
+/* CONTACT */
+
+
+  /* ================= CONTACT MOBILE FINAL FIX ================= */
+
+  .hub {
+    flex-direction: column;
+    padding: 16px;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .bub1,
+  .bub2 {
+    width: 100%;
+  }
+
+  .bub2 {
+    padding: 0;
+  }
+
+  .bub3 {
+    padding: 0;
+    width: 100%;
+  }
+
+  /* 🔥 FORCE INPUT FULL WIDTH */
+  .sheet,
+  .sheet1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+  }
+
+  .sheet1 {
+    height: 120px;
+  }
+
+  /* labels */
+  .bub3 label {
+    font-size: 13px;
+  }
+
+  /* button */
+  .sheet2 {
+    text-align: center;
+  }
+
+  .sheet2 button {
+    width: 140px;
+    height: 42px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+nav {
+    padding: 12px 20px;
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  ul {
+    gap: 14px;
+  }
+
+  li {
+    font-size: 20px;
+    padding: 6px;
+  }
+}

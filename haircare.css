@@ -1,0 +1,242 @@
+.tea {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.teaa {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+    gap: 150px;
+}
+nav,a,li{
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+li {
+    padding: 20px;
+
+}
+
+.container {
+    font-family: open serif sans-serif;
+}
+/* .dass {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    height: 264px;
+    background-color: rgb(187, 183, 183);
+} */
+ .dass{
+    margin-top: 35px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(187, 183, 183);
+}
+img:hover{
+    box-shadow: 0px 15px 25px;
+}
+.teaa img {
+    width: 310px;
+    height: 380px;
+    object-fit: contain;  
+}
+.teaa div {
+    width: 310px;
+    height: 380px;
+    /* text-align: center; */
+    padding-bottom: 80px;
+}
+@media  (min-width: 320px) and (max-width: 720px) 
+/* ================= MOBILE NAV BAR FIX ================= */
+
+{
+  body, section{
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+     margin-bottom: 0 ;
+    display: flex;
+    flex-direction: row;          /* 🔥 ONE LINE */
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+  }
+
+  .container h1 {
+    font-size: 18px;
+    white-space: nowrap;          /* 🔥 next line pogakoodaadhu */
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;          /* 🔥 ONE LINE MENU */
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-top: 4px;
+    padding: 0;
+    font-size: 8px;
+    white-space: nowrap;          /* 🔥 wrap aagadhu */
+  }
+
+  nav a {
+    text-decoration: none;
+    color: purple;
+    font-weight: 500;
+  }
+  /* ================= HAIR CARE MOBILE – FINAL FIX ================= */
+
+
+  /* ================= HAIR CARE MOBILE GRID ================= */
+
+  /* wrapper that contains both .teaa rows */
+  section > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 🔥 2 per row */
+    gap: 12px;
+    padding: 10px;
+  }
+
+  /* remove row separation */
+  .teaa {
+    display: contents;   /* 🔥 merge both rows */
+  }
+
+  /* each product card */
+  .teaa > div {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  /* image size */
+  .teaa img {
+    width: 100%;
+    max-width: 150px;
+    height: 170px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* text */
+  .teaa h2 {
+    margin-top: 5px;
+    font-size: 20px;
+    /* margin: 4px 0; */
+    white-space: nowrap;
+  }
+
+  .teaa p {
+    font-size: 12px;
+    margin: 2px 0;
+  }
+
+  .teaa i {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  /* title */
+  .tea {
+    display: flex;
+    justify-content: center;
+     margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 8px !important;
+  }
+
+  .tea h1 {
+    margin: 10px !important;      /* 💥 MAIN FIX */
+    padding: 0 !important;
+    font-size: 20px;
+    white-space: nowrap;
+  }
+}
+/* ================= TABLET VIEW (321px – 768px) ================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* ===== NAV ===== */
+
+  nav {
+    padding: 12px 20px;
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  ul {
+    gap: 14px;
+  }
+
+  li {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  /* ===== HAIR CARE TABLET GRID ===== */
+
+  section > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 🔥 3 per row */
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .teaa {
+    display: contents;
+  }
+
+  .teaa > div {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .teaa img {
+    max-width: 190px;
+    height: 200px;
+  }
+
+  .teaa h2 {
+    font-size: 30px;
+  }
+
+  .teaa p {
+    font-size: 15px;
+  }
+
+  .teaa i {
+    font-size: 16px;
+  }
+
+  .tea h1 {
+    font-size: 30px;
+    
+  }
+  
+}
+

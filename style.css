@@ -1,0 +1,1124 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+
+    flex-wrap: nowrap;
+}
+
+li {
+    padding: 10px;
+    white-space: nowrap;
+
+}
+
+nav a {
+    color: purple;
+    font-weight: 500;
+}
+
+.container h1 {
+    white-space: nowrap;
+}
+
+.container {
+    font-family: open serif sans-serif;
+}
+
+
+
+
+
+span {
+    font-size: small;
+}
+
+.demo {
+    width: 620px;
+    height: 620px;
+
+    /* margin-left: 75%; */
+}
+
+.demo1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(143, 77, 88)
+}
+
+.demo2 {
+    text-align: left;
+
+    margin: auto;
+    font-size: x-large;
+    color: aliceblue;
+    width: 500px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    font-size: large;
+}
+
+.demo3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+
+
+.demo5 {
+    margin-top: 0px;
+    width: 450px;
+    height: 600px;
+    border-radius: 80px;
+    padding: 20px;
+
+}
+
+.demo7 {
+    /* gap: 30px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 45px;
+    margin: 50px;
+    position: relative;
+
+}
+
+.demo8 {
+    width: 100%;
+    height: 100%;
+    /* margin: 5px; */
+    position: relative;
+    z-index: 2px;
+    /* background-color: blue;
+    left: 50px; */
+    /* border-radius: 25px; */
+    /* position: relative; */
+
+}
+
+.duck {
+    width: 500px;
+    height: 500px;
+
+
+}
+
+.one {
+    background-color: rgb(192, 131, 131);
+    position: absolute;
+    width: 500px;
+    height: 570px;
+    bottom: 50px;
+    left: 60px;
+    margin: 25px;
+}
+
+
+.abi {
+    /* padding: 8px; */
+    width: 500px;
+    font-size: larger;
+    height: 600px;
+    /* background-color: rgb(192, 131, 131); */
+    /* border-radius: 25px; */
+
+}
+
+.shree {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding-top: 35px;
+    background-color: rgb(243, 201, 248);
+}
+
+.niki {
+    width: 20%;
+}
+
+.ring {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.king {
+    display: flex;
+    justify-content: center;
+}
+
+.queen {
+    width: 300px;
+}
+
+.dhars {
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+
+}
+
+.sam {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 35px;
+
+}
+
+.tea {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    /* margin-top:45px; */
+}
+
+.teaa {
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    gap: 100px;
+}
+
+.hen {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:  80px;
+    /* align-items: center; */
+
+    /* background-color: rgb(242, 207, 213); */
+}
+
+/* .cock {
+    width: 600px;
+    height: 650px;
+    
+    margin-left: 45px;
+    background-image: url("./assets/kutty.jpg");
+    background-image: url("./assets/kutty1.jpg");
+    background-image: url("./assets/kutty2.jpg");
+    animation-duration: 3s 3s 3s;
+} */
+.cock {
+  
+    width: 450px;
+    height: 640px;
+    background-size: cover;
+    background-position: center;
+    animation: bgChange 9s infinite;
+    transition: background-image 1s ease-in-out;
+    border-radius: 55px;
+    margin-left: 50px;
+     margin-top: 80px;  
+}
+
+@keyframes bgChange {
+    0% {
+        background-image: url("./assets/kutty.jpg");
+    }
+
+    33% {
+        background-image: url("./assets/kutty1.jpg");
+    }
+
+    66% {
+        background-image: url("./assets/kutty2.jpg");
+    }
+
+    100% {
+        background-image: url("./assets/kutty.jpg");
+    }
+}
+
+
+.parrot {
+    width: 37%;
+    height: 27%;
+
+}
+
+.crow {
+    font-size: xx-large;
+    text-align: center;
+    
+    margin-top: 150px;
+
+
+
+
+}
+
+.hub {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(./assets/01-bg-grunge.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    color: white;
+
+}
+
+.bub1 {
+    width: 27%;
+    margin-top: 20px;
+}
+
+.bub2 {
+    width: 37%;
+    padding: 40px;
+    /* width: 100px; */
+}
+
+.bub3 {
+    padding: 20px;
+    width: 100%;
+    border: none;
+    outline: hidden;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    /* outline: none; */
+    /* border: rgb(103, 19, 19); */
+}
+
+.sheet {
+    width: 400px;
+    border-radius: 7px;
+    height: 30px;
+
+
+}
+
+.sheet1 {
+    height: 60px;
+    width: 400px;
+    border-radius: 7px;
+}
+
+.sheet2 {
+    padding-top: 20px;
+
+    /* width: 15%; */
+}
+
+.dass {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    height: 264px;
+}
+
+.glow {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.doctor {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    font-size: x-large;
+
+}
+
+footer {
+    background-color: rgb(241, 193, 193);
+}
+
+nav,
+a,
+li {
+    text-decoration: none;
+}
+
+.queen:hover {
+    box-shadow: 0 15px 25px;
+}
+
+.queen1:hover {
+    box-shadow: 0 15px 25px;
+}
+
+.queen3:hover {
+    box-shadow: 0 15px 25px;
+}
+
+.dhars img {
+    width: 310px;
+    height: 380px;
+    object-fit: contain;
+}
+
+.dhars div {
+    width: 310px;
+    height: 380px;
+    /* text-align: center; */
+    padding-bottom: 80px;
+}
+
+.teaa img {
+    width: 310px;
+    height: 380px;
+    object-fit: contain;
+}
+
+.teaa div {
+    width: 310px;
+    height: 380px;
+    /* text-align: center; */
+    padding-bottom: 80px;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+@media screen and  (min-width: 320px) and (max-width: 768px) 
+/* ================= MOBILE NAV BAR FIX ================= */
+
+{
+  nav {
+    display: flex;
+    flex-direction: row;          /* 🔥 ONE LINE */
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+  }
+
+  .container h1 {
+    font-size: 15px;
+    white-space: nowrap;          /* 🔥 next line pogakoodaadhu */
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;          /* 🔥 ONE LINE MENU */
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-top: 4px;
+    padding: 0;
+    font-size: 8px;
+    white-space: nowrap;/*🔥 wrap aagadhu */
+  }
+
+  nav a {
+    text-decoration: none;
+    color: purple;
+    font-weight: 500;
+  }
+
+
+
+    /* HERO SECTION */
+    .demo1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .demo {
+        margin-top:15px ;
+        width: 90%;
+        height: auto;
+    }
+
+    .demo2 {
+        width: 90%;
+        font-size: large;
+    }
+    .button{
+       
+    width: 150px;
+    height: 50px;
+    font-size: large;
+    margin-left: 80px
+    }
+
+  /* ===== ABOUT MOBILE STACK FIX ===== */
+
+.demo7 {
+  display: flex;
+  flex-direction: column;   /* 🔥 image top, text bottom */
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  margin: 8px;
+  padding: 8px;
+  position: relative;
+}
+
+/* IMAGE WRAPPER */
+.duck {
+  width: 160px;
+  height: 200px;
+  position: relative;
+  z-index: 2;
+}
+
+/* BACKGROUND BLOCK */
+.one {
+  width: 250px;
+  height: 240px;
+  position: absolute;
+  top: 10px;
+  left: 45%;
+  transform: translateX(-50%);
+}
+
+/* IMAGE */
+.demo8 {
+  width: 120%;
+  height: 120%;
+  justify-content: center;
+  object-fit: cover;
+}
+
+/* TEXT CONTENT */
+.abi {
+    margin-top: 50px;
+  width: 90%;
+  text-align: left;
+  font-size: 13px;
+  height: auto;
+}
+
+.abi h2 {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+.abi p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ABOUT TITLE */
+.doctor {
+  font-size: large;
+  padding-top: 10px;
+}
+  /* WHY CHOOSE US */
+    .shree {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .niki {
+        width: 250px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+  
+
+  #makeup > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  #makeup .ring {
+    display: contents;   /* 🔥 merges both rows */
+  }
+
+  #makeup .ring > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  #makeup .queen {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+  /* ===== MAKEUP TITLE MOBILE FIX ===== */
+
+#makeup .king {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0;
+}
+
+#makeup .king h1 {
+  text-align: center;
+  font-size: 22px;
+  white-space: nowrap;   /* 🔥 force single line */
+}
+
+/* ================= SKINCARE MOBILE FIX ================= */
+
+
+  /* GRID LAYOUT */
+  #skincare > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 10px;
+  }
+
+  /* REMOVE FLEX + FIX ROW ISSUE */
+  #skincare .dhars {
+    display: contents;
+  }
+
+  /* PRODUCT CARD RESET */
+  #skincare .dhars div {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  /* IMAGE FIX */
+  #skincare .dhars img,
+  #skincare .queen1 {
+    width: 100% !important;
+    max-width: 140px !important;
+    height: 170px !important;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 6px;
+  }
+
+  /* PRODUCT NAME */
+  #skincare h2 {
+     /* white-space: nowrap; */
+    padding-top: 10px;
+    font-size: 27px;
+    margin: 2px 0;
+    font-weight: 600;
+  }
+
+  /* PRICE */
+  #skincare p {
+    padding-top: 15px;
+    font-size: 15px;
+    margin: 2px 0;
+  }
+
+  /* STARS */
+  #skincare i {
+    font-size: 17px;
+  }
+
+  /* TITLE CENTER
+  #skincare .sam {
+    display: flex;
+    justify-content: center;
+    padding: 18px 0;
+  }
+
+  #skincare .sam h1 {
+    font-size: 22px;
+    white-space: nowrap;
+  }
+} */
+
+
+/* ===== SKINCARE TITLE MOBILE FIX ===== */
+
+#skincare .sam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0;
+}
+
+#skincare .sam h1 {
+  text-align: center;
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+ 
+
+  /* ================= HAIR CARE MOBILE FIX ================= */
+/* ================= HAIR CARE MOBILE – FINAL FIX ================= */
+
+
+  /* 🔥 PRODUCTS WRAPPER ONLY */
+  section.haircare > div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 12px;
+    padding: 10px;
+  }
+
+  /* 🔥 REMOVE ROW CONTAINERS */
+  section.haircare .teaa {
+    display: contents;
+  }
+
+  /* 🔥 EACH PRODUCT CARD */
+  section.haircare .teaa > div {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  /* 🔥 IMAGE SIZE = SKINCARE */
+  section.haircare img.queen3 {
+    width: 100% !important;
+    max-width: 140px !important;
+    height: 170px !important;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 6px;
+  }
+
+  /* TEXT SIZE */
+  section.haircare h2 {
+    padding-top: 20px;
+    font-size: 27px;
+    margin: 2px 0;
+    font-weight: 600;
+  }
+
+  section.haircare p {
+    padding-top: 15px;
+    font-size: 15px;
+    margin: 2px 0;
+  }
+
+  section.haircare i {
+    font-size: 17px;
+  }
+
+  /* TITLE CENTER */
+  section.haircare .tea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0;
+  }
+
+  section.haircare .tea h1 {
+    font-size: 22px;
+    white-space: nowrap;
+  }
+/* TITLE CENTER */
+  #haircare .tea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0;
+  }
+
+  #haircare .tea h1 {
+    font-size: 22px;
+    white-space: nowrap;
+  }
+
+
+.hen {
+    /* margin-top: 50px; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parrot {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cock {
+    margin-top: 10px;
+    width: 85%;
+    height: 380px;
+    margin-left: 0 !important;
+  }
+  .crow{
+    margin-top: 10px;
+    font-size: large;
+  }
+
+
+
+    /* CONTACT */
+
+
+    /* CONTACT SECTION MOBILE FIX */
+    .hub {
+        flex-direction: column;
+        padding: 15px;
+        height: auto;
+        overflow-x: hidden;   /* 🔥 important */
+    }
+
+    /* LEFT CONTACT INFO – MOBILE */
+    .bub1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* FORM CONTAINER */
+    .bub2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .bub3 {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* 🔥 REAL INPUT FIX */
+    input.sheet,
+    textarea.sheet1 {
+        width: 100% !important;   /* 🔥 screen width */
+        max-width: 100%;
+        margin: 0 0 15px 0;
+        box-sizing: border-box;
+        display: block;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    textarea.sheet1 {
+        height: 110px;
+    }
+
+    /* BUTTON */
+    .sheet2 {
+        text-align: center;
+    }
+
+    .sheet2 button {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+}
+
+/* =================== TABLET VIEW FIX =================== */
+/* =====================================================
+   TAB VIEW – FULL WIDTH FIX (321px – 768px)
+   ===================================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* ===== GLOBAL WIDTH RESET ===== */
+  body, html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  /* ================= NAV ================= */
+  nav {
+    width: 100%;
+    padding: 12px 24px;
+  }
+
+  /* ================= HERO SECTION ================= */
+  .demo1 {
+    width: 100%;
+    flex-direction: row;           /* image + text side by side */
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .demo2 {
+    width: 45%;
+    padding: 40px;
+    font-size: large;
+  }
+
+  .hero-img,
+  .demo {
+    width: 55%;
+    height: auto;
+  }
+
+  .demo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ================= ABOUT SECTION ================= */
+  #about {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .demo7 {
+    width: 100%;
+    max-width: 100%;
+    margin:0;
+    padding: 60px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+  }
+
+  /* background block */
+  .one {
+    position: absolute;
+    width: 42%;
+    height: 420px;
+    left: 0;
+    top: 60px;
+  }
+
+  /* image */
+  .duck {
+    width: 38%;
+    height: 360px;
+    z-index: 2;
+  }
+
+  .demo8 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* text */
+  .abi {
+    width: 40%;
+    font-size: 15px;
+    height: auto;
+  }
+
+  /* ================= WHY CHOOSE US ================= */
+  /* .shree {
+    width: 100%;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  } */
+  .shree {
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 25px;
+  }
+
+  .niki {
+    width: 150px;
+    font-size: 15px;
+    
+  }
+
+
+  /* ================= MAKEUP ================= */
+  #makeup .king {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  #makeup .king h1 {
+    text-align: center;
+    font-size: 26px;
+    white-space: nowrap;
+  }
+  #makeup > div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px;
+  }
+
+  #makeup .ring {
+    display: contents;
+  }
+
+  .queen {
+    width: 100%;
+    max-width: 230px;
+    margin: auto;
+  }
+
+  
+
+ /* =================== TABLET VIEW FIX =================== */
+
+
+  /* ---------- COMMON RESET ---------- */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* ================= SKIN CARE ================= */
+ #skincare .sam {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  #skincare .sam h1 {
+    text-align: center;
+    font-size: 25px;
+    white-space: nowrap;
+  }
+  #skincare > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 🔥 3 images per row */
+    gap: 30px;
+    padding: 30px;
+    
+  }
+  
+
+  #skincare .dhars {
+    display: contents; /* 🔥 row break remove */
+  }
+
+  #skincare .dhars div {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  #skincare .queen1 {
+    width: 100%;
+    max-width: 220px;
+    height: 260px;
+    object-fit: contain;
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  #skincare h2 {
+    font-size: 18px;
+    margin: 6px 0;
+  }
+
+  #skincare p {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+
+  /* ================= HAIR CARE ================= */
+
+  section.haircare > div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 🔥 3 images per row */
+    gap: 30px;
+    padding: 30px;
+  }
+
+  section.haircare .teaa {
+    display: contents; /* 🔥 row break remove */
+  }
+
+  section.haircare .teaa div {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  section.haircare img.queen3 {
+    width: 100%;
+    max-width: 220px;
+    height: 260px;
+    object-fit: contain;
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  section.haircare h2 {
+    font-size: 18px;
+    margin: 6px 0;
+  }
+
+  section.haircare p {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+
+
+
+  /* ================= MESSAGE SECTION ================= */
+  .hen {
+    width: 100%;
+    flex-direction: row;
+    padding: 40px;
+  }
+
+  .cock {
+    width: 320px;
+    height: 450px;
+    margin: 0;
+  }
+
+  .crow {
+    padding-left: 45px;
+    width: 50%;
+    font-size: x-large;
+  }
+
+  /* ================= CONTACT ================= */
+  .hub {
+    width: 100%;
+    padding: 40px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .bub1,
+  .bub2 {
+    width: 100%;
+  }
+
+  input.sheet,
+  textarea.sheet1 {
+    width: 100%;
+  }
+
+  /* ================= FOOTER ================= */
+  footer,
+  .dass {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+  }
+}

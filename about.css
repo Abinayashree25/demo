@@ -1,0 +1,461 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+li{
+    padding: 20px;
+    
+}
+.container{
+    font-family: open serif sans-serif;
+}
+.doctor{
+     display: flex;
+    justify-content: center;
+    /* padding-top: 35px; */
+    font-size: xx-large;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(243, 248, 248);
+    background-image: url(assets/about-bg-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-color: rgb(90, 132, 169); */
+    /* width: 800px; */
+    height: 500px;
+    /* width: 45%; */
+}
+.demo7{
+    /* gap: 30px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 45px;
+    margin: auto;
+    position: relative;
+    /* background-image: url(./assets/724708.jpg);
+    background-attachment: fixed;
+     */
+
+}
+.one{
+    background-color: rgb(192, 131, 131);
+    position: absolute;
+    width: 500px;
+    height: 570px;
+    bottom: 50px;
+    left: 60px;
+    margin: 25px;
+}
+
+    
+
+.demo8{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2px;
+    /* border-radius: 25px; */
+}
+.duck{
+    width: 500px;
+    height: 500px;
+
+}
+ .abi{
+    /* padding: 8px; */
+    width: 500px;
+    font-size: larger;
+    height: 600px;
+    /* background-color: rgb(192, 131, 131); */
+    /* border-radius: 25px; */
+    
+ }
+ .glow{
+    
+     margin-bottom:  80px;
+    display: flex;
+    justify-content: center;
+}
+.shree{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding-top: 35px;
+    background-color: rgb(243, 201, 248);
+ }
+ .niki{
+    width: 20%;
+ }
+ .dass{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(187, 183, 183);
+    margin-top: 40px;
+}
+.wings{
+    padding-bottom: 50px;
+    width: 37%;
+    font-size: x-large;
+    margin-top: 10%;
+    /* background-image: url(./assets/about-bg-01.jpg); */
+    
+}
+.wings1{
+    display: flex;
+    justify-content: space-evenly;
+    
+    /* background-color: rgb(243, 177, 245); */
+}
+nav,a,li{
+    text-decoration: none;
+}
+.parlour{
+    display: flex;
+}
+.stats{
+    /* margin-top: 60px; */
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-size: xx-large;
+    text-align: center;
+}
+.stune{
+    /* background-color: rgb(236, 202, 165); */
+    border-radius: 27px;
+}
+.correct{
+    width: 400px;
+    height: 400px;
+    
+}
+.crt{
+    margin-top: 40px;
+    display: flex;
+    gap: 100px;
+    margin-left: 40px;
+}
+@media  (min-width: 320px) and (max-width:768px)   
+/* ================= MOBILE NAV BAR FIX ================= */
+
+{
+  nav {
+    display: flex;
+    flex-direction: row;          /* 🔥 ONE LINE */
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+  }
+
+  .container h1 {
+    font-size: 18px;
+    white-space: nowrap;          /* 🔥 next line pogakoodaadhu */
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;          /* 🔥 ONE LINE MENU */
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-top: 4px;
+    padding: 0;
+    font-size: 8px;
+    white-space: nowrap;          /* 🔥 wrap aagadhu */
+  }
+
+  nav a {
+    text-decoration: none;
+    color: purple;
+    font-weight: 500;
+  }
+  
+  /* ===== ABOUT MOBILE STACK FIX ===== */
+
+.demo7 {
+  display: flex;
+  flex-direction: column;   /* 🔥 image top, text bottom */
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  margin: 8px;
+  padding: 8px;
+  position: relative;
+}
+
+/* IMAGE WRAPPER */
+.duck {
+  width: 160px;
+  height: 200px;
+  position: relative;
+  z-index: 2;
+}
+
+/* BACKGROUND BLOCK */
+.one {
+  width: 250px;
+  height: 240px;
+  position: absolute;
+  top: 10px;
+  left: 45%;
+  transform: translateX(-50%);
+}
+
+/* IMAGE */
+.demo8 {
+  width: 120%;
+  height: 120%;
+  justify-content: center;
+  object-fit: cover;
+}
+
+/* TEXT CONTENT */
+.abi {
+    margin-top: 50px;
+  width: 90%;
+  text-align: left;
+  font-size: 13px;
+  height: auto;
+}
+
+.abi h2 {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+.abi p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ===== HERO BACKGROUND FIX – ONLY 320px MOBILE ===== */
+
+
+  .doctor {
+    height: auto;                 /* remove fixed height */
+    min-height: 200px;            /* neat hero size */
+    padding: 20px 12px;
+
+    background-image: url(assets/about-bg-01.jpg);
+    background-size: cover;       /* full image like laptop */
+    background-position: center;  /* correct crop */
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* mobile bug fix */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .doctor h1 {
+    font-size: 15px;
+    margin: 0 0 6px 0;
+  }
+
+  .doctor p {
+    font-size: 11px;
+    line-height: 1.4;
+    margin: 0;
+  }
+/* WHY CHOOSE US */
+    .shree {
+        margin-top: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .niki {
+        width: 90%;
+        text-align: center;
+    }
+/* ===== STATS MOBILE STACK FIX ===== */
+.stats {
+    margin-top: 20px;
+  display: flex;
+  justify-content: space-between; /* evenly space items */
+  align-items: center;
+  gap: 6px;
+  padding: 0 6px;
+  background-color: #f9f9f9; /* optional, for visibility */
+}
+
+.stune {
+  flex: 1;              /* each takes equal width */
+  text-align: center;   /* center content */
+}
+
+.stune h2 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.stune p {
+  font-size: 9px;
+  margin: 0;
+  white-space: nowrap;     /* prevents text from breaking to next line */
+  overflow: hidden;        /* hides overflow */
+  text-overflow: ellipsis; /* adds ... if text too long */
+}
+
+
+/* ===== IMAGE SECTION MOBILE FIX ===== */
+.crt {
+    padding-top: 20px;
+  flex-direction: column;     /* 🔥 image below image */
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+  margin-left: 0;             /* 🔥 remove left gap */
+}
+
+.correct {
+  width: 90%;                 /* 🔥 mobile fit */
+  height: auto;
+  max-width: 260px;           /* neat size */
+  /* border-radius: 10px; */
+}
+}
+/* ================= TABLET VIEW (321px – 768px) ================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* ===== NAV ===== */
+
+  nav {
+    padding: 12px 20px;
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  ul {
+    gap: 14px;
+  }
+
+  li {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  /* ===== HERO / DOCTOR ===== */
+
+  .doctor {
+    height: auto;
+    min-height: 320px;
+    padding: 40px 20px;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+
+    text-align: center;
+  }
+
+  .doctor h1 {
+    font-size: 26px;
+  }
+
+  .doctor p {
+    font-size: 15px;
+  }
+
+  /* ===== IMAGE + TEXT SECTION ===== */
+
+  .demo7 {
+    flex-direction: row;     /* 🔥 side-by-side again */
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .duck {
+    width: 280px;
+    height: 300px;
+  }
+
+  .one {
+    width: 470px;
+    height: 330px;
+    left: 40px;
+    bottom: 20px;
+  }
+
+  .demo8 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .abi {
+    
+    padding-left: 100px;
+    width: 48%;
+    font-size: 15px;
+    height: auto;
+  }
+  .abi h2 {
+    margin-bottom: 10px;     /* reduce space below heading */
+  }
+
+
+  /* ===== WHY CHOOSE US ===== */
+
+  .shree {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 25px;
+  }
+
+  .niki {
+    width: 28%;
+  }
+
+  /* ===== STATS ===== */
+
+  .stats {
+    gap: 40px;
+    font-size: 22px;
+  }
+
+  .stune h2 {
+    font-size: 30px;
+  }
+
+  .stune p {
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  /* ===== IMAGE PAIR ===== */
+
+  .crt {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 0;
+  }
+
+  .correct {
+    width: 260px;
+    height: auto;
+  }
+
+}
