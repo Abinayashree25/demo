@@ -12,6 +12,16 @@ li{
     padding: 20px;
     
 }
+#check{
+    display:none;
+}
+
+.checking{
+    display:none;
+    font-size:25px;
+    cursor:pointer;
+}
+
 .container{
     font-family: open serif sans-serif;
 }
@@ -146,45 +156,74 @@ nav,a,li{
     gap: 100px;
     margin-left: 40px;
 }
-@media  (min-width: 320px) and (max-width:768px)   
-/* ================= MOBILE NAV BAR FIX ================= */
-
-{
-  nav {
-    display: flex;
-    flex-direction: row;          /* 🔥 ONE LINE */
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 10px;
-  }
-
-  .container h1 {
-    font-size: 18px;
-    white-space: nowrap;          /* 🔥 next line pogakoodaadhu */
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;          /* 🔥 ONE LINE MENU */
-    gap: 8px;
-    padding: 0;
+body{
     margin: 0;
-  }
-
-  li {
-    margin-top: 4px;
     padding: 0;
-    font-size: 8px;
-    white-space: nowrap;          /* 🔥 wrap aagadhu */
-  }
+}
+html, body {
+  /* width: 100%; */
+  overflow-x: hidden;
+}
+*{
+  /* margin:0; */
+  padding:0;
+  box-sizing:border-box;
+}
+@media screen and (min-width: 0px) and (max-width:768px)   
+/* ================= MOBILE NAV BAR FIX ================= */
+{
 
-  nav a {
-    text-decoration: none;
-    color: purple;
-    font-weight: 500;
-  }
-  
-  /* ===== ABOUT MOBILE STACK FIX ===== */
+  /* ===== MOBILE NAV FIX ===== */
+nav{
+  position: fixed;        /* 🔥 always top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;   /* 🔥 navbar background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  z-index: 9999;          /* 🔥 above everything */
+}
+
+.container h1{
+  font-size: 30px;
+  margin: 0;
+}
+
+.checking{
+  display: block;
+  font-size: 22px;
+  color: black;
+}
+
+/* MENU DROPDOWN */
+nav ul{
+  position: absolute;
+  right: 0;              /* 🔥 right side */
+  width: 220px; 
+  background: black;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 0;
+  transform: translateX(100%);   /* hide to right */
+  transition: 0.3s ease;
+}
+
+nav ul li{
+  margin: 10px 0;
+  color: white;
+  font-size: 17px;
+}
+
+/* #check:checked ~ ul{
+  left: 0;
+} */
+#check:checked ~ ul{
+  transform: translateX(0);   /* slide inside */
+}/* ===== ABOUT MOBILE STACK FIX ===== */
 
 .demo7 {
   display: flex;

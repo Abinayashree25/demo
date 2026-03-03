@@ -22,6 +22,12 @@ nav a {
     color: purple;
     font-weight: 500;
 }
+.checking{
+    display: none;
+}
+#check{
+    display: none;
+}
 
 .container h1 {
     white-space: nowrap;
@@ -392,46 +398,103 @@ li {
   box-sizing: border-box;
 }
 
+/* ================= NAVBAR DEFAULT ================= */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    position:relative;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:purple;
+    font-weight:500;
+}
+
+#check{
+    display:none;
+}
+
+.checking{
+    display:none;
+    font-size:25px;
+    cursor:pointer;
+}
+html, body {
+  /* width: 100%; */
+  overflow-x: hidden;
+}
+*{
+  /* margin:0; */
+  padding:0;
+  box-sizing:border-box;
+}
+/* ================= MOBILE VIEW ================= */
+
+@media screen and (min-width: 0px) and (max-width:768px){
+  
+
+  
+
+  nav{
+    position:relative;
+  }
+
+  .checking{
+    display:block;
+    font-size:26px;
+    cursor:pointer;
+  }
+
+  /* MENU FULLY HIDDEN */
+  nav ul{
+    position:absolute;
+    top:65px;
+    right: 0;              /* 🔥 right side */
+   width: 220px;
+   background:black;
+    flex-direction:column;
+    text-align:center;
+    /* padding:20px 0; */
+   padding: 20px 0;
+  transform: translateX(100%);   /* hide to right */
+  transition: 0.3s ease;
+  }
+
+  nav ul li{
+    margin:15px 0;
+    color: white;
+    font-size: 17px;
+  }
+
+  nav ul li a{
+    color:white;
+    font-size:18px;
+  }
+
+  /* WHEN CLICKED → SHOW */
+  #check:checked ~ ul{
+    transform: translateX(0);
+  }
 
 
-@media screen and  (min-width: 320px) and (max-width: 768px) 
+
+    /* Show 3 bar */
+    
+/* @media screen and  (min-width: 320px) and (max-width: 768px)  */
 /* ================= MOBILE NAV BAR FIX ================= */
 
-{
-  nav {
-    display: flex;
-    flex-direction: row;          /* 🔥 ONE LINE */
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 10px;
-  }
-
-  .container h1 {
-    font-size: 15px;
-    white-space: nowrap;          /* 🔥 next line pogakoodaadhu */
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;          /* 🔥 ONE LINE MENU */
-    gap: 8px;
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-    margin-top: 4px;
-    padding: 0;
-    font-size: 8px;
-    white-space: nowrap;/*🔥 wrap aagadhu */
-  }
-
-  nav a {
-    text-decoration: none;
-    color: purple;
-    font-weight: 500;
-  }
-
+/* { */
+  
 
 
     /* HERO SECTION */
@@ -820,6 +883,9 @@ li {
         height: 40px;
         font-size: 14px;
     }
+    .dass{
+      height: 200px;
+    }
 
 }
 
@@ -892,7 +958,7 @@ li {
   /* background block */
   .one {
     position: absolute;
-    width: 42%;
+    width: 500px;
     height: 400px;
     left: 0;
     top: 60px;

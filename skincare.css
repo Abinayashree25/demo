@@ -59,37 +59,85 @@ nav,a,li{
     height: 380px;
     /* text-align: center; */
     padding-bottom: 80px;
-}/* ================= MOBILE VIEW (0px – 320px) ================= */
+}
+#check{
+    display:none;
+}
+
+.checking{
+    display:none;
+    font-size:25px;
+    cursor:pointer;
+}
+html, body {
+  /* width: 100%; */
+  overflow-x: hidden;
+}
+*{
+  /* margin:0; */
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* ================= MOBILE VIEW (0px – 320px) ================= */
 /* ================= MOBILE VIEW (0–320px) ================= */
 
-@media screen and (min-width: 320px) and (max-width: 760px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
 
   /* ===== NAV BAR ===== */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px 8px;
-  }
+  /* ================= MOBILE NAV – RIGHT SIDE SLIDE ================= */
 
-  .container h1 {
-    font-size: 18px;
-    white-space: nowrap;
-  }
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 15px;
+    position:relative;
+}
 
-  ul {
-    display: flex;
-    gap: 6px;
-    padding: 0;
-    margin: 0;
-  }
+.container h1{
+    font-size:18px;
+}
 
-  li {
-    font-size: 8px;
-    padding: 0;
-    white-space: nowrap;
-  }
+/* show hamburger */
+.checking{
+    display:block;
+    font-size:24px;
+    cursor:pointer;
+    z-index:1001;
+}
 
+/* MOBILE MENU RIGHT SIDE */
+nav ul{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:60px;
+    right:0;              /* 🔥 RIGHT SIDE */
+    width:220px;
+    background:black;
+    text-align:center;
+    padding:20px 0;
+    transform:translateX(100%);   /* 🔥 hide to right */
+    transition:0.3s ease;
+}
+
+nav ul li{
+    margin:15px 0;
+    color: white;
+    font-size: 17px;
+}
+
+nav ul li a{
+    color:white;
+    font-size:18px;
+    text-decoration:none;
+}
+
+/* show menu */
+#check:checked ~ ul{
+    transform:translateX(0);   /* 🔥 slide inside */
+}
   /* ================= SKINCARE FIX ================= */
 
   /* 🔥 ONE master grid for all products */
@@ -152,88 +200,76 @@ nav,a,li{
   }
 
 }
+.container h1{
+    font-size:30px;
+}
 
 
 /* ================= TABLET VIEW (321px – 768px) ================= */
 
 /* ================= TABLET VIEW (321px – 768px) ================= */
+
+/* ================= TABLET VIEW (768px – 1024px) ================= */
+
+/* ================= TABLET VIEW (768px – 1024px) ================= */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
   /* ===== NAV ===== */
-  nav {
-    padding: 12px 20px;
+  nav{
+    padding: 15px 30px;
   }
 
-  .container h1 {
-    font-size: 30px;
-  }
-
-  ul {
-    gap: 14px;
-  }
-
-  li {
-    font-size: 18px;
-    padding: 6px;
-  }
-
-  /* ================= FORCE 3 ITEMS PER ROW ================= */
-
-  #skincare .dhars {
-    display: grid !important;               /* 🔥 RESET MOBILE */
-    grid-template-columns: repeat(3, 1fr); /* 🔥 3 PER ROW */
+  nav ul{
     gap: 20px;
-    padding: 16px;
   }
 
-  #skincare .dhars > div {
-    width: 100% !important;   /* 🔥 cancel desktop width */
-    height: auto !important;
-    padding-bottom: 20px;
-    text-align: center;
+  nav ul li{
+    padding: 10px;
+    font-size: 18px;
   }
 
-  #skincare .dhars img {
+  /* ===== MAKE ALL PRODUCTS ONE GRID ===== */
+
+  #skincare > div:last-child{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 🔥 2 per row */
+    gap: 25px;
+    padding: 25px;
+  }
+
+  /* Remove row layout */
+  #skincare .dhars{
+    display: contents;
+  }
+
+  /* Product card */
+  #skincare .dhars > div{
     width: 100%;
-    max-width: 190px;
-    height: 210px;
+    height: auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #skincare .dhars img{
+    width: 100%;
+    max-width: 230px;
+    height: 260px;
     object-fit: contain;
     margin: 0 auto;
   }
 
-  #skincare h2 {
-    font-size: 30px;
-    white-space: normal;
+  /* Text size */
+  #skincare h2{
+    font-size: 22px;
   }
 
-  #skincare p {
+  #skincare p{
     font-size: 15px;
-    white-space: normal;
   }
 
-  #skincare i {
-    font-size: 16px;
+  #skincare .sam h1{
+    font-size: 32px;
   }
-
-  #skincare .sam h1 {
-    font-size: 30px;
-  }
-
-  /* ===== FOOTER ===== */
-
-  .dass {
-    margin-top: 20px;
-    padding: 30px 20px;
-  }
-
-  .dass h1 {
-    font-size: 34px;
-  }
-
-  .dass p {
-    font-size: 16px;
-  }
-  
 
 }

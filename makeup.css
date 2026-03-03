@@ -42,164 +42,321 @@ li{
 nav,a,li{
     text-decoration: none;
 }
-@media   (min-width: 320px) and (max-width: 768px)   
-/* ================= MOBILE NAV BAR FIX ================= */
-{
-/* NAVBAR MOBILE FIX */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 10px;
-  }
+/* ================= MOBILE VIEW FULL WIDTH (0px – 768px) ================= */
 
-  .container h1 {
-    font-size: 18px;
-    white-space: nowrap;
-  }
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    padding: 0;
-    margin: 0;
-  }
 
-  li {
-    font-size: 8px;
-    white-space: nowrap;
-    padding: 0;
-    margin-top: 4px;
-  }
+  /* ===== NAVBAR ===== */
 
-  nav a {
-    text-decoration: none;
-    color: purple;
-    font-weight: 500;
-  }
+  /* ================= MOBILE NAVBAR ================= */
 
-  /* ===== MAKEUP PRODUCT GRID ===== */
-  section > div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
-    gap: 10px;
-  }
-
-  section .ring {
-    display: contents; /* merge multiple ring divs */
-    /* margin-bottom: 30px; */
-  }
-
-  section .ring > div {
-    width: 100%;
-    text-align: center;
-  }
-
-  section .queen {
-    width: 100%;
-    max-width: 140px; /* fits mobile */
-    margin: 0 auto;
-    display: block;
-  }
-
-  
-
-  /* ===== MAKEUP TITLE MOBILE FIX ===== */
-
-#makeup .king {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* padding: 18px 0; */
+#check{
+    display:none;
 }
 
-#makeup .king h1 {
-  
-  text-align: center;
-  font-size: 21px;
-  white-space: nowrap;   /* 🔥 force single line */
+.checking{
+    display:none;
+    font-size:26px;
+    cursor:pointer;
+}
+html, body {
+  /* width: 100%; */
+  overflow-x: hidden;
+}
+*{
+  /* margin:0; */
+  padding:0;
+  box-sizing:border-box;
 }
 
+/* MOBILE VIEW */
+@media screen and (min-width: 0px) and (max-width:768px){
+
+    /* ================= MOBILE NAV – RIGHT SIDE SLIDE ================= */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 15px;
+    position:relative;
 }
-/* ================= TABLET VIEW (321px – 768px) ================= */
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+.container h1{
+    font-size:18px;
+}
 
-  /* ===== NAV BAR ===== */
+/* show hamburger */
+.checking{
+    display:block;
+    font-size:24px;
+    cursor:pointer;
+    z-index:1001;
+}
 
-  nav {
-    padding: 12px 20px;
+/* MOBILE MENU RIGHT SIDE */
+nav ul{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:60px;
+    right:0;              /* 🔥 RIGHT SIDE */
+    width:220px;
+    background:black;
+    text-align:center;
+    padding:20px 0;
+    transform:translateX(100%);   /* 🔥 hide to right */
+    transition:0.3s ease;
+}
+
+nav ul li{
+    margin:15px 0;
+    color: white;
+    font-size: 17px;
+}
+
+nav ul li a{
+    color:white;
+    font-size:18px;
+    text-decoration:none;
+}
+
+/* show menu */
+#check:checked ~ ul{
+    transform:translateX(0);   /* 🔥 slide inside */
+}
+
+    body{
+        overflow-x:hidden;
+    }
+
+  /* ===== TITLE ===== */
+
+  #makeup .king{
+    margin:15px 0;
+    width:100%;
   }
 
-  .container h1 {
-    font-size: 30px;
+  #makeup .king h1{
+    font-size:20px;
+    text-align:center;
+    margin:0;
   }
 
-  ul {
-    gap: 14px;
+  /* ===== PRODUCT GRID FULL WIDTH ===== */
+
+  section > div:last-child{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    padding:15px;
   }
 
-  li {
-    font-size: 18px;
-    padding: 6px;
+  .ring{
+    display:contents;
   }
 
-  /* ===== MAKEUP GRID TABLET ===== */
-
-  section > div {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 🔥 3 per row */
-    gap: 18px;
-    padding: 16px;
+  .ring > div{
+    text-align:center;
+    width:100%;
   }
 
-  section .ring {
-    display: contents;   /* merge rows */
+  .queen{
+    width:100%;
+    max-width:160px;
+    height:auto;
+    display:block;
+    margin:0 auto;
   }
 
-  section .ring > div {
-    width: 100%;
-    text-align: center;
+  h2{
+    font-size:16px;
+    margin:5px 0;
   }
 
-  section .queen {
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
-    display: block;
+  p{
+    font-size:13px;
+    margin:4px 0;
+  }
+
+  /* ===== FOOTER FULL WIDTH ===== */
+
+  .dass{
+    width:100%;
+    margin-top:20px;
+    padding:25px 15px;
+    text-align:center;
+  }
+
+}
+/* ================= MOBILE VIEW (0px – 768px) ================= */
+
+@media screen and (min-width:0px) and (max-width:768px){
+
+  body{
+    margin:0;
+    padding:0;
+  }
+
+  /* ===== NAVBAR ===== */
+
+  nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 12px;
+  }
+
+  .container h1{
+    font-size:30px;
+    margin:0;
+  }
+
+  ul{
+    display:flex;
+    gap:8px;
+    padding:0;
+    margin:0;
+  }
+
+  li{
+    list-style:none;
+    font-size:11px;
+  }
+
+  nav a{
+    text-decoration:none;
+    color:purple;
   }
 
   /* ===== TITLE ===== */
-#makeup {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-  #makeup .king {
-    margin: 0 !important;
-    padding: 8px 0 !important; 
+
+  #makeup .king{
+    margin:15px 0;
   }
 
-  #makeup .king h1 {
-     margin: 0 !important;        /* 💥 MAIN FIX */
-    padding: 0 !important;
-    font-size: 30px;
-    text-align: center;
+  #makeup .king h1{
+    font-size:20px;
+    text-align:center;
+    margin:0;
+  }
+
+  /* ===== PRODUCT GRID ===== */
+
+  section > div:last-child{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    padding:10px;
+  }
+
+  .ring{
+    display:contents;
+  }
+
+  .ring > div{
+    text-align:center;
+  }
+
+  .queen{
+    width:100%;
+    max-width:150px;
+    height:auto;
+    display:block;
+    margin:auto;
+  }
+
+  h2{
+    font-size:16px;
+    margin:5px 0;
+  }
+
+  p{
+    font-size:13px;
+    margin:4px 0;
   }
 
   /* ===== FOOTER ===== */
 
-  .dass {
-    margin-top: 20px;
-    padding: 30px 20px;
+  .dass{
+    margin-top:20px;
+    padding:25px 10px;
+    text-align:center;
   }
 
-  .dass h1 {
-    font-size: 34px;
+  .dass h1{
+    font-size:20px;
   }
 
-  .dass p {
-    font-size: 16px;
+  .dass p{
+    font-size:13px;
+  }
+
+}/* ================= TABLET VIEW (321px – 768px) ================= */
+
+/* ================= MAKEUP TABLET VIEW (768px – 1024px) ================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* ===== NAV ===== */
+  nav{
+    padding: 15px 30px;
+  }
+
+  nav ul{
+    gap: 20px;
+  }
+
+  nav ul li{
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  /* ===== MAKEUP GRID ===== */
+
+  #makeup > div:last-child{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 🔥 2 per row */
+    gap: 25px;
+    padding: 25px;
+  }
+
+  /* Remove row structure */
+  #makeup .ring{
+    display: contents;
+  }
+
+  /* Product card */
+  #makeup .ring > div{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  /* Image */
+  #makeup .queen{
+    width: 100%;
+    max-width: 230px;
+    height: 260px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Text */
+  #makeup h2{
+    font-size: 22px;
+  }
+
+  #makeup p{
+    font-size: 15px;
+  }
+
+  #makeup .king h1{
+    font-size: 32px;
+    text-align: center;
   }
 
 }
